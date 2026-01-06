@@ -14,21 +14,47 @@ Follow this step-by-step guide to integrate Markup AI to your existing code repo
   - Replace the parent pom section with your parent's pom details, as shown below:
     - Example shows adding to `aem-guides-wknd` sample project
 
-  ![Parent Section of Module](assets/parent-section.png)
+  ```xml
+  <parent>
+    <groupId>com.adobe.aem.guides</groupId>
+    <artifactId>aem-guides-wknd</artifactId>
+    <version>3.2.1-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
+  </parent>
+  ```
 
   - Update the artifact Id as per your application's naming convention:
 
-  ![Artifact ID](assets/artifact-id-manager.png)
+  ```xml
+  <artifactId>aemaacs-markupai-project-markupai-manager</artifactId>
+  ```
 
 - Update  **/markupai/markupai.installer/pom.xml**
 
   - Update the artifact id as per your application's naming conventions.
 
-  ![Artifact ID](assets/artifact-id-installer.png)
+  ```xml
+  <artifactId>aemaacs-markupai-project-markupai-installer</artifactId>
+  ```
 
 - Add the MarkupAI module in the parent pom module section.
 
-  ![Parent POM](assets/parent-pom.png)
+  ```xml
+  <modules>
+    <module>all</module>
+    <module>core</module>
+    <module>ui.frontend</module>
+    <module>ui.apps</module>
+    <module>ui.apps.structure</module>
+    <module>ui.config</module>
+    <module>ui.content</module>
+    <module>ui.content.sample</module>
+    <module>it.tests</module>
+    <module>dispatcher</module>
+    <module>ui.tests</module>
+    <module>markupai</module>
+  </modules>
+  ```
 
 - Add a dependency to `all` module for markupai installer
 
