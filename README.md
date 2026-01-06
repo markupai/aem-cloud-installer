@@ -110,4 +110,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 
-For more information visit: [https://www.markupai.com](https://www.markupai.com)
+For more information visit: [https://www.markup.ai](https://www.markup.ai)
