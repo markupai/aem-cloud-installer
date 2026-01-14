@@ -47,7 +47,7 @@
 				<configuration>
 					<artifactItems>
 						<artifactItem>
-							<groupId>com.markupai</groupId>
+							<groupId>ai.markup</groupId>
 							<artifactId>markupai-aem-guides.ui.apps</artifactId>
 							<version>${markupai.version}</version>
 							<type>zip</type>
