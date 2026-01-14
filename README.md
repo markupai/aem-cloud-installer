@@ -9,7 +9,7 @@ Follow this step-by-step guide to integrate Markup AI to your existing code repo
 - Create a clone of your Cloud Manager's Git repository.
 - Checkout the code from latest available [Git tag](https://github.com/markupai/MarkupAI-Installer-for-AEMaaCS/tags). (Don't use the `main` branch as it could contain untested changes)
 - Copy the MarkupAI module to the root directory of the cloud manager code.
-- Update  **/markupai/pom.xml**
+- Update **/markupai/pom.xml**
 
   - Replace the parent pom section with your parent's pom details, as shown below:
     - Example shows adding to `aem-guides-wknd` sample project
@@ -29,7 +29,7 @@ Follow this step-by-step guide to integrate Markup AI to your existing code repo
   <artifactId>aemaacs-markupai-project-markupai-manager</artifactId>
   ```
 
-- Update  **/markupai/markupai.installer/pom.xml**
+- Update **/markupai/markupai.installer/pom.xml**
 
   - Update the artifact id as per your application's naming conventions.
 
@@ -62,7 +62,7 @@ Follow this step-by-step guide to integrate Markup AI to your existing code repo
 
   ```xml
   <dependency>
-    <groupId>com.markupai</groupId>
+    <groupId>ai.markup</groupId>
     <artifactId>aemaacs-markupai-project-markupai-installer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <type>zip</type>
@@ -74,7 +74,7 @@ Follow this step-by-step guide to integrate Markup AI to your existing code repo
   ```xml
   <embeddeds>
     <embedded>
-      <groupId>com.markupai</groupId>
+      <groupId>ai.markup</groupId>
       <artifactId>aemaacs-markupai-project-markupai-installer</artifactId>
       <type>zip</type>
       <target>/apps/wknd-packages/application/install</target> <!-- Adjust path as per your project-->
@@ -85,7 +85,6 @@ Follow this step-by-step guide to integrate Markup AI to your existing code repo
 ## Updating MarkupAI
 
 Update `markupai.version` property in **/markupai/markupai.installer/pom.xml**
-
 
 ## Uninstalling MarkupAI
 

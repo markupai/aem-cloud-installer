@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.markupai</groupId>
+		<groupId>ai.markup</groupId>
 		<artifactId>aemaacs-markupai-project-markupai-manager</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 		<relativePath>../pom.xml</relativePath>
@@ -12,14 +13,15 @@
 
 	<artifactId>aemaacs-markupai-project-markupai-installer</artifactId>
 
-  <packaging>content-package</packaging>
+	<packaging>content-package</packaging>
 
 	<name>MarkupAI for AEMaaCS - MarkupAI Installer</name>
 
 	<properties>
 		<!-- Replace with the version of the MarkupAI Add-On ZIP File provided by the Maven Artifactory -->
-      <markupai.version>1.0.0</markupai.version>
-      <target.path.for.install>${project.build.outputDirectory}/jcr_root/apps/markupai-installer/install</target.path.for.install>
+		<markupai.version>1.0.0</markupai.version>
+		<target.path.for.install>
+			${project.build.outputDirectory}/jcr_root/apps/markupai-installer/install</target.path.for.install>
 	</properties>
 
 	<build>
@@ -66,7 +68,7 @@
 				<configuration>
 					<packageType>container</packageType>
 					<jcrRootSourceDirectory>${project.build.outputDirectory}/jcr_root</jcrRootSourceDirectory>
-                    <allowIndexDefinitions>true</allowIndexDefinitions>
+					<allowIndexDefinitions>true</allowIndexDefinitions>
 				</configuration>
 			</plugin>
 			<plugin>
