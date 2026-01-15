@@ -1,4 +1,4 @@
-# MarkupAI-Installer-for-AEMaaCS
+# MarkupAI AEM Cloud Installer
 
 ## Steps for Adding MarkupAI to AEMaaCS
 
