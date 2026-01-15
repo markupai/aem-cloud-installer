@@ -1,4 +1,4 @@
-# MarkupAI-Installer-for-AEMaaCS
+# MarkupAI AEM Cloud Installer
 
 ## Steps for Adding MarkupAI to AEMaaCS
 
@@ -7,7 +7,7 @@ Follow this step-by-step guide to integrate Markup AI to your existing code repo
 ## Adding the MarkupAI Module
 
 - Create a clone of your Cloud Manager's Git repository.
-- Checkout the code from latest available [Git tag](https://github.com/markupai/MarkupAI-Installer-for-AEMaaCS/tags). (Don't use the `main` branch as it could contain untested changes)
+- Checkout the code from latest available [Git tag](https://github.com/markupai/aem-cloud-installer/tags). (Don't use the `main` branch as it could contain untested changes)
 - Copy the MarkupAI module to the root directory of the cloud manager code.
 - Update **/markupai/pom.xml**
 
