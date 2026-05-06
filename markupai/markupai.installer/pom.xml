@@ -19,7 +19,7 @@
 
 	<properties>
 		<!-- Replace with the version of the MarkupAI Add-On ZIP File provided by the Maven Artifactory -->
-		<markupai.version>1.0.0</markupai.version>
+		<markupai.version>1.0.2</markupai.version>
 		<target.path.for.install>
 			${project.build.outputDirectory}/jcr_root/apps/markupai-installer/install</target.path.for.install>
 	</properties>
